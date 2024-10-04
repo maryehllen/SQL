@@ -1,0 +1,41 @@
+CREATE TABLE horario (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+dia_semana VARCHAR(20),
+hora TIME,
+matéria VARCHAR(50),
+professor VARCHAR(50)
+);
+
+INSERT INTO horario (dia_semana, hora, matéria, professor)
+VALUES('Segunda-Feira', '07:30', 'Biologia', 'Michele'),
+('Segunda-Feira', '08:20', 'Sociologia', 'Itamar'),
+('Segunda-Feira', '09:10', 'Projeto de Vida', 'Amauri'),
+('Segunda-Feira', '10:20', 'Análise e Projeto de Sistema', 'Ian'),
+('Segunda-Feira', '11:10', 'Análise e Projeto de Sistema', 'Ian'),
+('Segunda-Feira', '12:00', 'Sociologia', 'Itamar'),
+('Terça-Feira', '07:30', 'Matemática', 'Marcel'),
+('Terça-Feira', '08:20', 'Português', 'Marcia'),
+('Terça-Feira', '09:10', 'Programação Front-End', 'Gabriel'),
+('Terça-Feira', '10:20', 'História', 'Michel'),
+('Terça-Feira', '11:10', 'Ciência da Computação', 'Gabriel'),
+('Terça-Feira', '12:00', 'Português', 'Marcia'),
+('Quarta-Feira', '07:30', 'Matemática', 'Marcel'),
+('Quarta-Feira', '08:20', 'Português', 'Marcia'),
+('Quarta-Feira', '09:10', 'Programação Front-End', 'Gabriel'),
+('Quarta-Feira', '10:20', 'Programação Front-End', 'Gabriel'),
+('Quarta-Feira', '11:10', 'Educação Financeira', 'Kellin'),
+('Quarta-Feira', '12:00', 'Banco de Dados', 'Gabriel'),
+('Quinta-Feira', '07:30', 'Química', 'Aline'),
+('Quinta-Feira', '08:20', 'Inglês', 'Deise'),
+('Quinta-Feira', '09:10', 'Química', 'Aline'),
+('Quinta-Feira', '10:20', 'Geografia', 'Adélio'),
+('Quinta-Feira', '11:10', 'Programação Front-End', 'Gabriel'),
+('Quinta-Feira', '12:00', 'Geografia', 'Adélio'),
+('Sexta-Feira', '07:30', 'Programação Mobile', 'Luciano'),
+('Sexta-Feira', '08:20', 'Banco de Dados', 'Gabriel'),
+('Sexta-Feira', '09:10', 'Matemática', 'Marcel'),
+('Sexta-Feira', '10:20', 'Biologia', 'Michele'),
+('Sexta-Feira', '11:10', 'Programação Mobile', 'Luciano'),
+('Sexta-Feira', '12:00', 'Ciência da Computação', 'Gabriel');
+
+SELECT * FROM horario
